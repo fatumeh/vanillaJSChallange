@@ -14,10 +14,7 @@ button.forEach((btn) => {
         counter.innerText = count;
         counter.classList.remove("text-primary", "text-success");
 
-        if (count < 0) {
-            counter.classList.add("text-primary");
-        } else if (count > 0) {
-            counter.classList.add("text-success");
-        }
+        if (count < 0) counter.classList.add("text-primary");
+        if (count > 0) counter.classList.add("text-success");
     });
 });
